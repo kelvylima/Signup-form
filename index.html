@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="left">
+        
+        <div id="logo">
+            <div id="logo-img">
+                <img id="odinlogo" src="images/sidebarodinicon.png" alt="">
+            </div>
+            <div id="logo-text">ODIN</div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="righttop">
+            <div id="righttoptext">
+                <h3 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                    distinctio autem quos sed soluta quo, dolorem magni praesentium natus ex qui perspiciatis
+                    hic tenetur minus vitae! Odio iste animi assumenda.</h3>
+            </div>
+            <h3>You know you want</h3>
+        </div>
+        <form action="" method="post" id="form">
+            <div id="formtitle">
+                <h1>Let's do this</h1>
+            </div>
+            <div class="form-row">
+                <div class="labeldiv">
+                    <label for="firstname">First name</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="labeldiv">
+                    <label for="lastname">Last name</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="labeldiv">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="labeldiv">
+                    <label for="phonenumber">Phone number</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" required pattern="[\(]\d{2}[\)][9]\d{4}[\-]\d{4}">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="labeldiv">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                </div>
+                <div class="labeldiv">
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" name="" id="confirmpassword" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                </div>
+            </div>
+       
+        </form>
+        <div id="rightbottom">
+            <button type="submit" form="form">Create Account</button>
+
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
